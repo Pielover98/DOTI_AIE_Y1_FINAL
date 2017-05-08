@@ -1,0 +1,904 @@
+﻿Log file open, 05/08/17 15:39:27
+LogInit:Display: Running engine for game: FinalProject
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-2103934449) SRandInit(-2103934449).
+LogTaskGraph: Started task graph with 5 named threads and 10 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.108777
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3416026
+LogInit: Engine Version: 4.15.2-3416026+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May  1 2017 13:11:28
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: C:/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.05.08-22.39.29:344][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.08-22.39.29:344][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.08-22.39.29:358][  0]LogInit: Computer: SEA-7E868A
+[2017.05.08-22.39.29:358][  0]LogInit: User: xaviermelton
+[2017.05.08-22.39.29:358][  0]LogInit: CPU Page size=65536, Cores=6
+[2017.05.08-22.39.29:358][  0]LogInit: High frequency timer resolution =3.222900 MHz
+[2017.05.08-22.39.29:358][  0]LogMemory: Memory total: Physical=31.8GB (32GB approx)
+[2017.05.08-22.39.29:358][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.08-22.39.29:358][  0]LogMemory: Process Physical Memory: 267.13 MB used, 267.13 MB peak
+[2017.05.08-22.39.29:358][  0]LogMemory: Process Virtual Memory: 265.17 MB used, 265.17 MB peak
+[2017.05.08-22.39.29:358][  0]LogMemory: Physical Memory: 9588.13 MB used,  23005.72 MB free, 32593.85 MB total
+[2017.05.08-22.39.29:358][  0]LogMemory: Virtual Memory: 631.66 MB used,  23005.72 MB free, 8388608.00 MB total
+[2017.05.08-22.39.29:447][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.05.08-22.39.30:167][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.08-22.39.30:197][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960' (Feature Level 11_0)
+[2017.05.08-22.39.30:197][  0]LogD3D11RHI:       1969/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.05.08-22.39.30:197][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.08-22.39.30:204][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.08-22.39.30:204][  0]LogD3D11RHI:     GPU DeviceId: 0x1401 (for the marketing name, search the web for "GPU Device Id")
+[2017.05.08-22.39.30:204][  0]LogWindows: EnumDisplayDevices:
+[2017.05.08-22.39.30:204][  0]LogWindows:    0. 'NVIDIA GeForce GTX 960' (P:1 D:1)
+[2017.05.08-22.39.30:204][  0]LogWindows:    1. 'NVIDIA GeForce GTX 960' (P:0 D:1)
+[2017.05.08-22.39.30:205][  0]LogWindows:    2. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.05.08-22.39.30:205][  0]LogWindows:    3. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.05.08-22.39.30:205][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2017.05.08-22.39.30:205][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2017.05.08-22.39.30:205][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2017.05.08-22.39.30:205][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2017.05.08-22.39.30:205][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960
+[2017.05.08-22.39.30:205][  0]LogD3D11RHI:   Driver Version: 353.62 (internal:10.18.13.5362, unified:353.62)
+[2017.05.08-22.39.30:205][  0]LogD3D11RHI:      Driver Date: 7-22-2015
+[2017.05.08-22.39.30:205][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.05.08-22.39.30:222][  0]LogD3D11RHI: NvAPI_D3D_GetCurrentSLIState failed: 0xfffffff7
+[2017.05.08-22.39.30:222][  0]LogD3D11RHI: [Aftermath] Aftermath enabled but failed to initialize due to reason: DriverVersionNotSupported
+[2017.05.08-22.39.30:222][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.08-22.39.30:239][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.05.08-22.39.30:242][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Intermediate/Shaders/WorkingDirectory/8016/).
+[2017.05.08-22.39.30:242][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/xavier.melton/AppData/Local/Temp/UnrealShaderWorkingDir/47B61E3A4F75A8DD18DD7EA1F1F93A74/'.
+[2017.05.08-22.39.30:242][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.08-22.39.31:556][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.08-22.39.31:624][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.08-22.39.31:688][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.08-22.39.31:743][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.08-22.39.31:799][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.08-22.39.31:863][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.08-22.39.31:930][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.08-22.39.31:992][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.08-22.39.32:047][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.08-22.39.32:105][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.08-22.39.32:169][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.08-22.39.32:225][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.08-22.39.32:282][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.08-22.39.32:342][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.08-22.39.32:400][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.08-22.39.32:512][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.08-22.39.32:513][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.08-22.39.32:550][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.08-22.39.32:644][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.08-22.39.32:699][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.08-22.39.32:761][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.08-22.39.32:819][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.08-22.39.32:872][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.08-22.39.32:932][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.08-22.39.32:932][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.08-22.39.33:371][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.08-22.39.33:429][  0]LogDerivedDataCache: Loaded boot cache 0.06s 50MB C:/Users/xavier.melton/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.08-22.39.33:429][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/xavier.melton/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.08-22.39.33:430][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.08-22.39.33:430][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.08-22.39.33:430][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.08-22.39.33:430][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.08-22.39.33:448][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.08-22.39.33:460][  0]LogDerivedDataCache: Using Local data cache path C:/Users/xavier.melton/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.08-22.39.33:475][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.08-22.39.33:476][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.08-22.39.33:476][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.08-22.39.33:755][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.08-22.39.33:758][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.08-22.39.33:987][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.08-22.39.34:032][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.08-22.39.34:083][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.08-22.39.34:083][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.08-22.39.34:083][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.08-22.39.34:716][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: finalproject, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3356675869
+[2017.05.08-22.39.34:767][  0]LogAssetRegistry: FAssetRegistry took 0.0205 seconds to start up
+[2017.05.08-22.39.34:838][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.036332 seconds
+[2017.05.08-22.39.34:842][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.05.08-22.39.34:842][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.05.08-22.39.34:842][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.08-22.39.34:905][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.08-22.39.37:221][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.08-22.39.37:264][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.08-22.39.37:979][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.08-22.39.38:498][  0]SourceControl: Info Source control is disabled
+[2017.05.08-22.39.38:549][  0]SourceControl: Info Source control is disabled
+[2017.05.08-22.39.38:598][  0]SourceControl: Info Source control is disabled
+[2017.05.08-22.39.38:644][  0]SourceControl: Info Source control is disabled
+[2017.05.08-22.39.40:612][  0]LogEngine: Initializing Engine...
+[2017.05.08-22.39.40:613][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.05.08-22.39.40:741][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.08-22.39.40:741][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.08-22.39.40:894][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.08-22.39.40:941][  0]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.08-22.39.40:959][  0]LogInit: FAudioDevice initialized.
+[2017.05.08-22.39.41:011][  0]LogDerivedDataCache: Saved boot cache 0.05s 50MB C:/Users/xavier.melton/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.08-22.39.41:021][  0]LogInit: Texture streaming: Enabled
+[2017.05.08-22.39.41:172][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.08-22.39.41:309][  0]LogInit: Transaction tracking system initialized
+[2017.05.08-22.39.42:221][  0]BlueprintLog: New page: Editor Load
+[2017.05.08-22.39.43:360][  0]LocalizationService: Info Localization service is disabled
+[2017.05.08-22.39.44:206][  0]LogConsoleResponse:Display: 
+[2017.05.08-22.39.44:365][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.08-22.39.44:365][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.08-22.39.45:097][  0]LogFileCache: Scanning file cache for directory 'C:/Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/' took 0.02s
+[2017.05.08-22.39.45:841][  0]SourceControl: Info Source control is disabled
+[2017.05.08-22.39.45:841][  0]Cmd: MAP LOAD FILE="../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.08-22.39.45:842][  0]LightingResults: New page: Lighting Build
+[2017.05.08-22.39.45:942][  0]MapCheck: New page: Map Check
+[2017.05.08-22.39.45:942][  0]LightingResults: New page: Lighting Build
+[2017.05.08-22.39.46:480][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.05.08-22.39.46:516][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.08-22.39.46:517][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.08-22.39.46:576][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 59.203ms to complete.
+[2017.05.08-22.39.46:576][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.735
+[2017.05.08-22.39.46:889][  0]LogCollectionManager: Loaded 0 collections in 0.001797 seconds
+[2017.05.08-22.39.47:066][  0]LogFileCache: Scanning file cache for directory 'C:/Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Saved/Collections/' took 0.01s
+[2017.05.08-22.39.47:066][  0]LogFileCache: Scanning file cache for directory 'C:/Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/Developers/xaviermelton/Collections/' took 0.01s
+[2017.05.08-22.39.47:066][  0]LogFileCache: Scanning file cache for directory 'C:/Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/Collections/' took 0.01s
+[2017.05.08-22.39.47:066][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2017.05.08-22.39.47:089][  0]LogContentBrowser: Native class hierarchy populated in 0.0226 seconds. Added 2245 classes and 453 folders.
+[2017.05.08-22.39.47:267][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2017.05.08-22.39.47:363][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2017.05.08-22.39.47:479][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.05.08-22.39.47:741][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.08-22.39.47:751][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.05.08-22.39.47:870][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2017.05.08-22.39.47:870][  0]LogLoad: (Engine Initialization) Total time: 21.12 seconds
+[2017.05.08-22.39.47:870][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.17 seconds
+[2017.05.08-22.39.47:870][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.05.08-22.39.47:870][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.05.08-22.39.48:209][  0]LogOcInput: OculusInput pre-init called
+[2017.05.08-22.39.48:239][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.05.08-22.39.48:242][  0]LogSlate: Took 0.000652 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.08-22.39.48:251][  0]LogSlate: Took 0.000541 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.08-22.39.48:265][  0]LogSlate: Took 0.000471 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.08-22.39.48:510][  0]LogSlate: Took 0.000283 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.08-22.39.48:557][  0]LogRenderer: Reallocating scene render targets to support 1208x576 NumSamples 1 (Frame:2).
+[2017.05.08-22.39.49:318][  3]LogAssetRegistry: Asset discovery search completed in 14.5707 seconds
+[2017.05.08-22.39.49:318][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000008 seconds (found 0 objects)
+[2017.05.08-22.39.49:318][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000039 seconds (updated 0 objects)
+[2017.05.08-22.39.49:341][  3]LogSlate: Took 0.000650 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.08-22.39.56:492][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:492][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/XaviersShit/BP_BasicInventoryCharacter.uasset.
+[2017.05.08-22.39.56:492][429]LoadErrors:Error: Error /Game/XaviersShit/BP_BasicInventoryCharacter : Can't find file for asset. /Game/Blueprints/BasicInventory/BP_FoodInventory
+[2017.05.08-22.39.56:492][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:492][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/XaviersShit/BP_BasicInventoryCharacter.uasset.
+[2017.05.08-22.39.56:493][429]LoadErrors:Error: Error /Game/XaviersShit/BP_BasicInventoryCharacter : Can't find file for asset. /Game/Blueprints/BasicInventory/BP_InventoryActor
+[2017.05.08-22.39.56:493][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:493][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/XaviersShit/BP_BasicInventoryCharacter.uasset.
+[2017.05.08-22.39.56:493][429]LoadErrors:Error: Error /Game/XaviersShit/BP_BasicInventoryCharacter : Can't find file for asset. /Game/Blueprints/BasicInventory/BP_UsableActor
+[2017.05.08-22.39.56:495][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:495][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/XaviersShit/BP_BasicInventoryCharacter.uasset.
+[2017.05.08-22.39.56:495][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:495][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/XaviersShit/BP_BasicInventoryCharacter.uasset.
+[2017.05.08-22.39.56:497][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:497][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/XaviersShit/BP_BasicInventoryCharacter.uasset.
+[2017.05.08-22.39.56:497][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:497][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/XaviersShit/BP_BasicInventoryCharacter.uasset.
+[2017.05.08-22.39.56:497][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:497][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/XaviersShit/BP_BasicInventoryCharacter.uasset.
+[2017.05.08-22.39.56:503][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:503][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading NULL.
+[2017.05.08-22.39.56:503][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:504][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:504][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:504][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:504][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:504][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading NULL.
+[2017.05.08-22.39.56:504][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:504][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:504][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:504][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading NULL.
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading NULL.
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:505][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:506][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:506][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by BP_BasicInventoryCharacter
+[2017.05.08-22.39.56:506][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:507][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:507][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by BP_BasicInventoryCharacter
+[2017.05.08-22.39.56:507][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:520][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:520][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_24540
+[2017.05.08-22.39.56:521][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:521][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:521][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_24545
+[2017.05.08-22.39.56:521][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:521][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:521][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_24550
+[2017.05.08-22.39.56:522][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:522][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:522][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_24557
+[2017.05.08-22.39.56:522][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:522][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:522][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_24558
+[2017.05.08-22.39.56:522][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:523][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:523][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_24567
+[2017.05.08-22.39.56:523][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:524][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:524][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by K2Node_CallFunction_29906
+[2017.05.08-22.39.56:524][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:524][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:524][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_25986
+[2017.05.08-22.39.56:524][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:525][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:525][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by K2Node_CallFunction_30513
+[2017.05.08-22.39.56:525][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:525][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:525][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_25998
+[2017.05.08-22.39.56:525][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:526][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:526][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_24620
+[2017.05.08-22.39.56:526][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:526][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:527][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_24632
+[2017.05.08-22.39.56:527][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:527][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:527][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by K2Node_CallFunction_34318
+[2017.05.08-22.39.56:527][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:527][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:528][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_26010
+[2017.05.08-22.39.56:528][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:531][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:531][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_24677
+[2017.05.08-22.39.56:532][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:532][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:532][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_26075
+[2017.05.08-22.39.56:532][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:534][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:534][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_24764
+[2017.05.08-22.39.56:534][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:534][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:534][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_26084
+[2017.05.08-22.39.56:534][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:535][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:535][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_26086
+[2017.05.08-22.39.56:535][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:535][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:535][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by K2Node_CallFunction_241586
+[2017.05.08-22.39.56:535][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:536][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:536][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_26097
+[2017.05.08-22.39.56:536][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:540][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:540][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_23505
+[2017.05.08-22.39.56:540][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:540][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:540][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by K2Node_FunctionResult_0
+[2017.05.08-22.39.56:540][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:540][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:541][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by K2Node_DynamicCast_134
+[2017.05.08-22.39.56:541][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:541][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_UsableActor'
+[2017.05.08-22.39.56:541][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_UsableActor.BP_UsableActor_C Referenced by EdGraphPin_25385
+[2017.05.08-22.39.56:541][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_UsableActor' while loading NULL.
+[2017.05.08-22.39.56:544][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:544][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_FoodInventory.BP_FoodInventory_C Referenced by EdGraphPin_23548
+[2017.05.08-22.39.56:544][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading NULL.
+[2017.05.08-22.39.56:544][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:544][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_FoodInventory.BP_FoodInventory_C Referenced by K2Node_FunctionEntry_508
+[2017.05.08-22.39.56:544][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading NULL.
+[2017.05.08-22.39.56:546][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:546][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_FoodInventory.BP_FoodInventory_C Referenced by K2Node_VariableGet_1363
+[2017.05.08-22.39.56:546][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading NULL.
+[2017.05.08-22.39.56:546][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_FoodInventory'
+[2017.05.08-22.39.56:547][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_FoodInventory.BP_FoodInventory_C Referenced by EdGraphPin_29638
+[2017.05.08-22.39.56:547][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_FoodInventory' while loading NULL.
+[2017.05.08-22.39.56:547][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:547][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25471
+[2017.05.08-22.39.56:547][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:548][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:548][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25472
+[2017.05.08-22.39.56:548][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:548][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:549][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_23802
+[2017.05.08-22.39.56:549][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:552][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:552][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_23915
+[2017.05.08-22.39.56:552][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:553][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:553][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25554
+[2017.05.08-22.39.56:553][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:553][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:553][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25555
+[2017.05.08-22.39.56:553][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:554][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:554][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by K2Node_DynamicCast_643
+[2017.05.08-22.39.56:554][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:554][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:554][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25573
+[2017.05.08-22.39.56:555][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:557][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:557][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_23823
+[2017.05.08-22.39.56:557][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:558][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:558][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25626
+[2017.05.08-22.39.56:558][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:559][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:559][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25628
+[2017.05.08-22.39.56:559][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:559][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:559][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by K2Node_VariableGet_515
+[2017.05.08-22.39.56:559][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:560][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:560][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25638
+[2017.05.08-22.39.56:560][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:562][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:562][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_23944
+[2017.05.08-22.39.56:562][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:563][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:563][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25708
+[2017.05.08-22.39.56:563][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:564][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:564][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25721
+[2017.05.08-22.39.56:564][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:566][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:566][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25751
+[2017.05.08-22.39.56:566][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:566][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:566][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25753
+[2017.05.08-22.39.56:566][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:568][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:568][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_24068
+[2017.05.08-22.39.56:568][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:569][429]LogLinker:Warning: Can't find file '/Game/Blueprints/BasicInventory/BP_InventoryActor'
+[2017.05.08-22.39.56:569][429]LoadErrors: Info Failed to load /Game/Blueprints/BasicInventory/BP_InventoryActor.BP_InventoryActor_C Referenced by EdGraphPin_25778
+[2017.05.08-22.39.56:569][429]LogLinker:Warning: Can't find file for asset '/Game/Blueprints/BasicInventory/BP_InventoryActor' while loading NULL.
+[2017.05.08-22.39.56:594][429]LogBlueprint:Warning: [BP_BasicInventoryCharacter] 'HungerDecrease' variable not found. Base class was probably changed.
+[2017.05.08-22.39.56:595][429]LogBlueprint:Warning: [BP_BasicInventoryCharacter] 'PickupClass' variable not found. Base class was probably changed.
+[2017.05.08-22.39.56:615][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Could not find a function named "Use" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  Use
+[2017.05.08-22.39.56:615][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning InputAction Event references unknown Action 'UseInventoryItem' for  InputAction UseInventoryItem
+[2017.05.08-22.39.56:617][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Can't connect pins  Target  and  Usable Actor : Reference is not compatible with Object Reference.
+[2017.05.08-22.39.56:617][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Could not find a function named "OnUsed" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  On Used
+[2017.05.08-22.39.56:617][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Can't connect pins  Usable Actor  and  Target : Object Reference is not compatible with Reference.
+[2017.05.08-22.39.56:617][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Could not find a function named "EndFocus" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  End Focus
+[2017.05.08-22.39.56:617][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Could not find a function named "BeginFocus" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  Begin Focus
+[2017.05.08-22.39.56:617][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'Turn' for  InputAxis Turn
+[2017.05.08-22.39.56:618][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'LookUp' for  InputAxis LookUp
+[2017.05.08-22.39.56:618][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'MoveForward' for  InputAxis MoveForward
+[2017.05.08-22.39.56:618][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'MoveRight' for  InputAxis MoveRight
+[2017.05.08-22.39.56:618][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'LookUpRate' for  InputAxis LookUpRate
+[2017.05.08-22.39.56:618][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'TurnRate' for  InputAxis TurnRate
+[2017.05.08-22.39.56:621][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Can't connect pins  Hit Actor  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.05.08-22.39.56:621][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Can't connect pins  Object  and  Hit Actor : This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.05.08-22.39.56:622][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Could not find a variable named "HungerDecrease" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  Get HungerDecrease
+[2017.05.08-22.39.56:623][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error COMPILER ERROR: failed building connection with 'This cast has an invalid target type (was the class deleted without a redirect?).' at  SpawnActor
+[2017.05.08-22.39.56:626][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Could not find a variable named "PickupClass" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  Get PickupClass
+[2017.05.08-22.39.56:629][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2017.05.08-22.39.56:629][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2017.05.08-22.39.56:629][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.39.56:630][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:631][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:634][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Default value '' for  Usable Actor  is invalid: 'PinSubCategoryObject on pin 'UsableActor' is NULL and PinSubCategory is '' not 'self''
+[2017.05.08-22.39.56:636][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The property associated with  Hunger Decrease  could not be found
+[2017.05.08-22.39.56:636][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:636][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:636][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Target Array  is undetermined.  Connect something to  Remove Index  to imply a specific type.
+[2017.05.08-22.39.56:636][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.39.56:636][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:636][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:637][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The property associated with  Pickup Class  could not be found
+[2017.05.08-22.39.56:637][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:637][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:637][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.39.56:637][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:670][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning [0029.91] Compile of BP_BasicInventoryCharacter failed. 25 Fatal Issue(s) 11 Warning(s) [in 70 ms] (/Game/XaviersShit/BP_BasicInventoryCharacter.BP_BasicInventoryCharacter)
+[2017.05.08-22.39.56:670][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning [0029.91] Compile of BP_BasicInventoryCharacter failed. 25 Fatal Issue(s) 12 Warning(s) [in 0 ms] (/Game/XaviersShit/BP_BasicInventoryCharacter.BP_BasicInventoryCharacter)
+[2017.05.08-22.39.56:670][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning [0029.91] Compile of BP_BasicInventoryCharacter failed. 25 Fatal Issue(s) 13 Warning(s) [in 0 ms] (/Game/XaviersShit/BP_BasicInventoryCharacter.BP_BasicInventoryCharacter)
+[2017.05.08-22.39.56:691][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Could not find a function named "Use" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  Use
+[2017.05.08-22.39.56:691][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning InputAction Event references unknown Action 'UseInventoryItem' for  InputAction UseInventoryItem
+[2017.05.08-22.39.56:691][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Can't connect pins  Target  and  Usable Actor : Reference is not compatible with Object Reference.
+[2017.05.08-22.39.56:691][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Could not find a function named "OnUsed" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  On Used
+[2017.05.08-22.39.56:691][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Can't connect pins  Usable Actor  and  Target : Object Reference is not compatible with Reference.
+[2017.05.08-22.39.56:691][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Could not find a function named "EndFocus" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  End Focus
+[2017.05.08-22.39.56:691][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Could not find a function named "BeginFocus" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  Begin Focus
+[2017.05.08-22.39.56:691][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'Turn' for  InputAxis Turn
+[2017.05.08-22.39.56:691][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'LookUp' for  InputAxis LookUp
+[2017.05.08-22.39.56:692][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'MoveForward' for  InputAxis MoveForward
+[2017.05.08-22.39.56:692][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'MoveRight' for  InputAxis MoveRight
+[2017.05.08-22.39.56:692][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'LookUpRate' for  InputAxis LookUpRate
+[2017.05.08-22.39.56:692][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Input Axis Event references unknown Axis 'TurnRate' for  InputAxis TurnRate
+[2017.05.08-22.39.56:695][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Can't connect pins  Hit Actor  and  Object : This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.05.08-22.39.56:695][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Can't connect pins  Object  and  Hit Actor : This cast has an invalid target type (was the class deleted without a redirect?).
+[2017.05.08-22.39.56:697][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Could not find a variable named "HungerDecrease" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  Get HungerDecrease
+[2017.05.08-22.39.56:698][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error COMPILER ERROR: failed building connection with 'This cast has an invalid target type (was the class deleted without a redirect?).' at  SpawnActor
+[2017.05.08-22.39.56:700][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning Could not find a variable named "PickupClass" in 'BP_BasicInventoryCharacter'.
+Make sure 'BP_BasicInventoryCharacter' has been compiled for  Get PickupClass
+[2017.05.08-22.39.56:701][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2017.05.08-22.39.56:702][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error This blueprint (self) is not compatible with ' Target ', therefore that pin must have a connection.
+[2017.05.08-22.39.56:702][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.39.56:702][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:702][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:703][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error Default value '' for  Usable Actor  is invalid: 'PinSubCategoryObject on pin 'UsableActor' is NULL and PinSubCategory is '' not 'self''
+[2017.05.08-22.39.56:704][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The property associated with  Hunger Decrease  could not be found
+[2017.05.08-22.39.56:704][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:704][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Variable  is undetermined.  Connect something to  Add  to imply a specific type.
+[2017.05.08-22.39.56:704][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Target Array  is undetermined.  Connect something to  Add  to imply a specific type.
+[2017.05.08-22.39.56:704][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  New Item  is undetermined.  Connect something to  Add  to imply a specific type.
+[2017.05.08-22.39.56:705][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:705][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Target Array  is undetermined.  Connect something to  Remove Index  to imply a specific type.
+[2017.05.08-22.39.56:705][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.39.56:705][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:705][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:705][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The property associated with  Pickup Class  could not be found
+[2017.05.08-22.39.56:705][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:705][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:706][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.39.56:706][429]LogBlueprint:Error: [Compiler BP_BasicInventoryCharacter] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.39.56:743][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning [0029.99] Compile of BP_BasicInventoryCharacter failed. 28 Fatal Issue(s) 11 Warning(s) [in 69 ms] (/Game/XaviersShit/BP_BasicInventoryCharacter.BP_BasicInventoryCharacter)
+[2017.05.08-22.39.56:743][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning [0029.99] Compile of BP_BasicInventoryCharacter failed. 28 Fatal Issue(s) 12 Warning(s) [in 0 ms] (/Game/XaviersShit/BP_BasicInventoryCharacter.BP_BasicInventoryCharacter)
+[2017.05.08-22.39.56:743][429]LogBlueprint:Warning: [Compiler BP_BasicInventoryCharacter] Warning [0029.99] Compile of BP_BasicInventoryCharacter failed. 28 Fatal Issue(s) 13 Warning(s) [in 0 ms] (/Game/XaviersShit/BP_BasicInventoryCharacter.BP_BasicInventoryCharacter)
+[2017.05.08-22.39.56:810][429]LogSlate: Took 0.000336 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.08-22.39.57:478][429]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0023 seconds. Added 112 classes and 0 folders.
+[2017.05.08-22.39.58:414][429]LogSlate: Took 0.000164 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.08-22.39.58:585][429]LogSlate: Took 0.000213 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.05.08-22.39.58:877][430]LogSlate: Took 0.000299 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.05.08-22.41.19:643][ 24]BlueprintLog: New page: Compile Player
+[2017.05.08-22.41.20:619][ 58]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MattsStuff/Player" FILE="../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/MattsStuff/Player.uasset" SILENT=true
+[2017.05.08-22.41.20:724][ 58]LogSavePackage: Save=79.09ms
+[2017.05.08-22.41.20:724][ 58]LogSavePackage: Moving '../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Saved/Player8BEA684F479E7AD59650B5BCB7825AE9.tmp' to '../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/MattsStuff/Player.uasset'
+[2017.05.08-22.41.20:734][ 58]LogSavePackage:Display: Finished SavePackage ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/MattsStuff/Player.uasset
+[2017.05.08-22.41.28:027][411]BlueprintLog: New page: Compile Player
+[2017.05.08-22.41.28:750][427]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MattsStuff/Player" FILE="../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/MattsStuff/Player.uasset" SILENT=true
+[2017.05.08-22.41.28:866][427]LogSavePackage: Save=97.63ms
+[2017.05.08-22.41.28:866][427]LogSavePackage: Moving '../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Saved/PlayerD227E939433EDC27313D93BECA258800.tmp' to '../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/MattsStuff/Player.uasset'
+[2017.05.08-22.41.28:868][427]LogSavePackage:Display: Finished SavePackage ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/MattsStuff/Player.uasset
+[2017.05.08-22.41.55:107][914]LogRenderer: Reallocating scene render targets to support 1208x744 NumSamples 1 (Frame:1492).
+[2017.05.08-22.42.04:364][450]LogBlueprint:Warning: [Player] 'PickupClass' variable not found. Base class was probably changed.
+[2017.05.08-22.42.06:323][539]LogEditorTransaction: Undo Paste clipboard contents
+[2017.05.08-22.42.06:853][550]LogEditorTransaction: Undo Break Pin Links
+[2017.05.08-22.42.13:452][ 16]LogBlueprint:Warning: [Player] 'PickupClass' variable not found. Base class was probably changed.
+[2017.05.08-22.42.18:589][307]LogEditorTransaction: Undo Move Nodes
+[2017.05.08-22.42.19:293][328]LogEditorTransaction: Undo Move Nodes
+[2017.05.08-22.42.19:859][353]LogEditorTransaction: Undo Paste clipboard contents
+[2017.05.08-22.42.22:290][522]LogUObjectHash:Warning: Ambiguous search, could be EdGraphNode_Comment /Game/MattsStuff/Player.Player:DropItem.EdGraphNode_Comment_43 or EdGraphNode_Comment /Game/MattsStuff/Player.Player:DropItem.EdGraphNode_Comment_43
+[2017.05.08-22.42.22:290][522]LogUObjectHash:Warning: Ambiguous search, could be EdGraphNode_Comment /Game/MattsStuff/Player.Player:DropItem.EdGraphNode_Comment_41 or EdGraphNode_Comment /Game/MattsStuff/Player.Player:DropItem.EdGraphNode_Comment_41
+[2017.05.08-22.42.22:290][522]LogUObjectHash:Warning: Ambiguous search, could be EdGraphNode_Comment /Game/MattsStuff/Player.Player:DropItem.EdGraphNode_Comment_39 or EdGraphNode_Comment /Game/MattsStuff/Player.Player:DropItem.EdGraphNode_Comment_39
+[2017.05.08-22.42.22:290][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_SpawnActorFromClass /Game/MattsStuff/Player.Player:DropItem.K2Node_SpawnActorFromClass_67 or K2Node_SpawnActorFromClass /Game/MattsStuff/Player.Player:DropItem.K2Node_SpawnActorFromClass_67
+[2017.05.08-22.42.22:291][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_496 or K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_496
+[2017.05.08-22.42.22:291][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallArrayFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallArrayFunction_844 or K2Node_CallArrayFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallArrayFunction_844
+[2017.05.08-22.42.22:291][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_515 or K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_515
+[2017.05.08-22.42.22:291][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_60495 or K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_60495
+[2017.05.08-22.42.22:291][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_586 or K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_586
+[2017.05.08-22.42.22:291][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/MattsStuff/Player.Player:DropItem.K2Node_CommutativeAssociativeBinaryOperator_1026 or K2Node_CommutativeAssociativeBinaryOperator /Game/MattsStuff/Player.Player:DropItem.K2Node_CommutativeAssociativeBinaryOperator_1026
+[2017.05.08-22.42.22:292][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_61703 or K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_61703
+[2017.05.08-22.42.22:292][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_62182 or K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_62182
+[2017.05.08-22.42.22:292][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CommutativeAssociativeBinaryOperator /Game/MattsStuff/Player.Player:DropItem.K2Node_CommutativeAssociativeBinaryOperator_1063 or K2Node_CommutativeAssociativeBinaryOperator /Game/MattsStuff/Player.Player:DropItem.K2Node_CommutativeAssociativeBinaryOperator_1063
+[2017.05.08-22.42.22:292][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_658 or K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_658
+[2017.05.08-22.42.22:293][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallArrayFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallArrayFunction_918 or K2Node_CallArrayFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallArrayFunction_918
+[2017.05.08-22.42.22:293][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_830 or K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_830
+[2017.05.08-22.42.22:293][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_IfThenElse /Game/MattsStuff/Player.Player:DropItem.K2Node_IfThenElse_186 or K2Node_IfThenElse /Game/MattsStuff/Player.Player:DropItem.K2Node_IfThenElse_186
+[2017.05.08-22.42.22:293][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallArrayFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallArrayFunction_2368 or K2Node_CallArrayFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallArrayFunction_2368
+[2017.05.08-22.42.22:293][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_175452 or K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_175452
+[2017.05.08-22.42.22:293][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_832 or K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_832
+[2017.05.08-22.42.22:294][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_2772 or K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_2772
+[2017.05.08-22.42.22:294][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallArrayFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallArrayFunction_67 or K2Node_CallArrayFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallArrayFunction_67
+[2017.05.08-22.42.22:294][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_118774 or K2Node_CallFunction /Game/MattsStuff/Player.Player:DropItem.K2Node_CallFunction_118774
+[2017.05.08-22.42.22:294][522]LogUObjectHash:Warning: Ambiguous search, could be K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_1259 or K2Node_VariableGet /Game/MattsStuff/Player.Player:DropItem.K2Node_VariableGet_1259
+[2017.05.08-22.42.22:294][522]LogUObjectHash:Warning: Ambiguous search, could be EdGraphNode_Comment /Game/MattsStuff/Player.Player:DropItem.EdGraphNode_Comment_755 or EdGraphNode_Comment /Game/MattsStuff/Player.Player:DropItem.EdGraphNode_Comment_755
+[2017.05.08-22.42.22:308][522]LogBlueprint:Warning: [Player] 'PickupClass' variable not found. Base class was probably changed.
+[2017.05.08-22.42.36:013][257]BlueprintLog: New page: Compile Player
+[2017.05.08-22.42.36:077][257]LogBlueprint:Warning: [Compiler Player] Warning Could not find a variable named "PickupClass" in 'Player'.
+Make sure 'Player' has been compiled for  Get PickupClass
+[2017.05.08-22.42.36:084][257]LogBlueprint:Error: [Compiler Player] Error The type of  Target Array  is undetermined.  Connect something to  Remove Index  to imply a specific type.
+[2017.05.08-22.42.36:084][257]LogBlueprint:Error: [Compiler Player] Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.42.36:084][257]LogBlueprint:Error: [Compiler Player] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.42.36:085][257]LogBlueprint:Error: [Compiler Player] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.42.36:085][257]LogBlueprint:Error: [Compiler Player] Error The property associated with  Pickup Class  could not be found
+[2017.05.08-22.42.36:085][257]LogBlueprint:Error: [Compiler Player] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.42.36:085][257]LogBlueprint:Error: [Compiler Player] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.42.36:417][257]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "PickupClass" in 'Player'.
+Make sure 'Player' has been compiled for  Get PickupClass
+[2017.05.08-22.42.36:417][257]BlueprintEditorCompileResults:Error: Error The type of  Target Array  is undetermined.  Connect something to  Remove Index  to imply a specific type.
+[2017.05.08-22.42.36:417][257]BlueprintEditorCompileResults:Error: Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.42.36:417][257]BlueprintEditorCompileResults:Error: Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.42.36:417][257]BlueprintEditorCompileResults:Error: Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.42.36:417][257]BlueprintEditorCompileResults:Error: Error The property associated with  Pickup Class  could not be found
+[2017.05.08-22.42.36:417][257]BlueprintEditorCompileResults:Error: Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.42.36:417][257]BlueprintEditorCompileResults:Error: Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.42.36:418][257]LogBlueprint:Warning: [Compiler Player] Warning [0189.64] Compile of Player failed. 7 Fatal Issue(s) 1 Warning(s) [in 404 ms] (/Game/MattsStuff/Player.Player)
+[2017.05.08-22.44.03:666][846]LogSlate: Took 0.000311 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.05.08-22.44.27:268][895]BlueprintLog: New page: Compile Player
+[2017.05.08-22.44.27:322][895]LogBlueprint:Warning: [Compiler Player] Warning InputAction Event references unknown Action 'UseInventoryItem' for  InputAction UseInventoryItem
+[2017.05.08-22.44.27:322][895]LogBlueprint:Error: [Compiler Player] Error Could not find a function named "TickHunger" in 'Player_C'.
+Make sure 'Player_C' has been compiled for  Tick Hunger
+[2017.05.08-22.44.27:326][895]LogBlueprint:Warning: [Compiler Player] Warning Could not find a variable named "PickupClass" in 'Player'.
+Make sure 'Player' has been compiled for  Get PickupClass
+[2017.05.08-22.44.27:326][895]LogBlueprint:Error: [Compiler Player] Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.44.27:326][895]LogBlueprint:Error: [Compiler Player] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:328][895]LogBlueprint:Error: [Compiler Player] Error The type of  Target Array  is undetermined.  Connect something to  Remove Index  to imply a specific type.
+[2017.05.08-22.44.27:328][895]LogBlueprint:Error: [Compiler Player] Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.44.27:329][895]LogBlueprint:Error: [Compiler Player] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:329][895]LogBlueprint:Error: [Compiler Player] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:329][895]LogBlueprint:Error: [Compiler Player] Error The property associated with  Pickup Class  could not be found
+[2017.05.08-22.44.27:329][895]LogBlueprint:Error: [Compiler Player] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:329][895]LogBlueprint:Error: [Compiler Player] Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Warning: Warning InputAction Event references unknown Action 'UseInventoryItem' for  InputAction UseInventoryItem
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error Could not find a function named "TickHunger" in 'Player_C'.
+Make sure 'Player_C' has been compiled for  Tick Hunger
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Warning: Warning Could not find a variable named "PickupClass" in 'Player'.
+Make sure 'Player' has been compiled for  Get PickupClass
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error The type of  Target Array  is undetermined.  Connect something to  Remove Index  to imply a specific type.
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error The type of  Target Array  is undetermined.  Connect something to  Length  to imply a specific type.
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error The property associated with  Pickup Class  could not be found
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:655][895]BlueprintEditorCompileResults:Error: Error The current value of the ' Target Array ' pin is invalid: Array inputs (like 'Target Array') must have an input wired into them (try connecting a MakeArray node).
+[2017.05.08-22.44.27:656][895]LogBlueprint:Warning: [Compiler Player] Warning [0300.87] Compile of Player failed. 10 Fatal Issue(s) 2 Warning(s) [in 387 ms] (/Game/MattsStuff/Player.Player)
+[2017.05.08-22.45.18:586][190]LogEditorTransaction: Undo Delete current selection
+[2017.05.08-22.45.18:863][191]LogEditorTransaction: Undo Change Parameter Type
+[2017.05.08-22.45.18:904][191]LogEditorTransaction: Undo Rename Node
+[2017.05.08-22.45.19:126][192]LogEditorTransaction: Undo Resize Node
+[2017.05.08-22.45.19:175][192]LogEditorTransaction: Undo Rename Node
+[2017.05.08-22.45.19:193][192]LogEditorTransaction: Undo Move Nodes
+[2017.05.08-22.45.19:468][193]LogEditorTransaction: Undo Resize Node
+[2017.05.08-22.45.19:522][193]LogEditorTransaction: Undo Paste clipboard contents
+[2017.05.08-22.45.19:742][194]LogEditorTransaction: Undo Delete current selection
+[2017.05.08-22.45.19:825][194]LogEditorTransaction: Undo Create Pin Link
+[2017.05.08-22.45.20:062][195]LogEditorTransaction: Undo Create Pin Link
+[2017.05.08-22.45.20:063][195]LogEditorTransaction: Undo Move Node
+[2017.05.08-22.45.20:305][196]LogEditorTransaction: Undo Move Node
+[2017.05.08-22.45.20:350][196]LogEditorTransaction: Undo Move Node
+[2017.05.08-22.45.20:371][196]LogEditorTransaction: Undo Create Pin Link
+[2017.05.08-22.45.20:694][197]LogEditorTransaction: Undo Move Node
+[2017.05.08-22.45.20:739][197]LogEditorTransaction: Undo Paste clipboard contents
+[2017.05.08-22.45.20:759][197]LogEditorTransaction: Undo Delete current selection
+[2017.05.08-22.45.21:075][198]LogEditorTransaction: Undo Create Pin Link
+[2017.05.08-22.45.21:117][198]LogEditorTransaction: Undo Break Pin Links
+[2017.05.08-22.45.21:424][199]LogEditorTransaction: Undo Break Pin Links
+[2017.05.08-22.45.21:454][199]LogEditorTransaction: Undo Create Pin Link
+[2017.05.08-22.45.21:713][200]LogEditorTransaction: Undo Break Pin Links
+[2017.05.08-22.45.21:766][200]LogEditorTransaction: Undo Create Pin Link
+[2017.05.08-22.45.22:077][201]LogEditorTransaction: Undo Create Pin Link
+[2017.05.08-22.45.39:698][979]BlueprintLog: New page: Compile Player
+[2017.05.08-22.45.39:742][979]LogBlueprint:Error: [Compiler Player] Error This blueprint (self) is not a PickupActor_C, therefore ' Target ' must have a connection.
+[2017.05.08-22.45.39:742][979]LogBlueprint:Error: [Compiler Player] Error This blueprint (self) is not a PickupActor_C, therefore ' Target ' must have a connection.
+[2017.05.08-22.45.40:032][979]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a PickupActor_C, therefore ' Target ' must have a connection.
+[2017.05.08-22.45.40:032][979]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a PickupActor_C, therefore ' Target ' must have a connection.
+[2017.05.08-22.45.40:033][979]LogBlueprint:Warning: [Compiler Player] Warning [0373.24] Compile of Player failed. 2 Fatal Issue(s) 0 Warning(s) [in 335 ms] (/Game/MattsStuff/Player.Player)
+[2017.05.08-22.46.34:544][320]BlueprintLog: New page: Compile Player
+[2017.05.08-22.46.34:593][320]LogBlueprint:Error: [Compiler Player] Error This blueprint (self) is not a PickupActor_C, therefore ' Target ' must have a connection.
+[2017.05.08-22.46.34:593][320]LogBlueprint:Error: [Compiler Player] Error This blueprint (self) is not a PickupActor_C, therefore ' Target ' must have a connection.
+[2017.05.08-22.46.34:894][320]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a PickupActor_C, therefore ' Target ' must have a connection.
+[2017.05.08-22.46.34:894][320]BlueprintEditorCompileResults:Error: Error This blueprint (self) is not a PickupActor_C, therefore ' Target ' must have a connection.
+[2017.05.08-22.46.34:895][320]LogBlueprint:Warning: [Compiler Player] Warning [0428.09] Compile of Player failed. 2 Fatal Issue(s) 0 Warning(s) [in 350 ms] (/Game/MattsStuff/Player.Player)
+[2017.05.08-22.47.22:518][546]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MattsStuff/Player" FILE="../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/MattsStuff/Player.uasset" SILENT=true
+[2017.05.08-22.47.22:613][546]LogSavePackage: Save=73.26ms
+[2017.05.08-22.47.22:613][546]LogSavePackage: Moving '../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Saved/Player521A04554E42EBF324DD37908DCCE9AD.tmp' to '../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/MattsStuff/Player.uasset'
+[2017.05.08-22.47.22:618][546]LogSavePackage:Display: Finished SavePackage ../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/MattsStuff/Player.uasset
+[2017.05.08-22.47.22:811][546]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.08-22.47.22:873][546]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.08-22.47.23:189][547]Cmd: QUIT_EDITOR
+[2017.05.08-22.47.23:317][547]LogExit: Preparing to exit.
+[2017.05.08-22.47.24:445][547]LogDirectoryWatcher: A directory notification failed for 'C:/Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/', and we were unable to create a new request.
+[2017.05.08-22.47.24:500][547]LogExit: Editor shut down
+[2017.05.08-22.47.24:500][547]LogExit: Transaction tracking system shut down
+[2017.05.08-22.47.24:605][547]LogObj: Freed 0b from 0 cluster array pools.
+[2017.05.08-22.47.24:605][547]LogExit: Object subsystem successfully closed.
+[2017.05.08-22.47.24:621][547]LogD3D11RHI: Shutdown
+[2017.05.08-22.47.24:622][547]LogD3D11RHI: CleanupD3DDevice
+[2017.05.08-22.47.24:696][547]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.05.08-22.47.24:721][547]LogModuleManager: Shutting down and abandoning module BlueprintGraph (502)
+[2017.05.08-22.47.24:721][547]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (500)
+[2017.05.08-22.47.24:721][547]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.05.08-22.47.24:721][547]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.05.08-22.47.24:721][547]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.05.08-22.47.24:721][547]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.05.08-22.47.24:721][547]LogDirectoryWatcher: A directory notification for 'C:/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.05.08-22.47.24:725][547]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.05.08-22.47.24:726][547]LogDirectoryWatcher: A directory notification for 'C:/Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/Collections/' was aborted.
+[2017.05.08-22.47.24:726][547]LogDirectoryWatcher: A directory notification for 'C:/Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/Developers/xaviermelton/Collections/' was aborted.
+[2017.05.08-22.47.24:726][547]LogDirectoryWatcher: A directory notification for 'C:/Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Saved/Collections/' was aborted.
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.05.08-22.47.24:726][547]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.05.08-22.47.24:727][547]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.05.08-22.47.24:873][547]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.05.08-22.47.24:873][547]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.05.08-22.47.24:873][547]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.05.08-22.47.24:873][547]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.05.08-22.47.24:873][547]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.05.08-22.47.24:874][547]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.05.08-22.47.24:914][547]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.05.08-22.47.24:914][547]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.05.08-22.47.24:914][547]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.05.08-22.47.24:914][547]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.05.08-22.47.24:914][547]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.05.08-22.47.24:914][547]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.05.08-22.47.24:914][547]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.05.08-22.47.24:914][547]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.05.08-22.47.24:914][547]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.05.08-22.47.24:929][547]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.05.08-22.47.24:929][547]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.05.08-22.47.24:929][547]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.05.08-22.47.24:929][547]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.05.08-22.47.24:929][547]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.05.08-22.47.24:929][547]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.05.08-22.47.24:929][547]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.05.08-22.47.24:929][547]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.05.08-22.47.24:930][547]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.05.08-22.47.25:117][547]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.05.08-22.47.25:117][547]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.05.08-22.47.25:117][547]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.05.08-22.47.25:117][547]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.05.08-22.47.25:117][547]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.05.08-22.47.25:118][547]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.05.08-22.47.25:120][547]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.05.08-22.47.25:120][547]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.05.08-22.47.25:120][547]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.05.08-22.47.25:121][547]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.05.08-22.47.25:123][547]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.05.08-22.47.25:123][547]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.05.08-22.47.25:123][547]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.05.08-22.47.25:123][547]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.05.08-22.47.25:223][547]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.05.08-22.47.25:323][547]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.05.08-22.47.25:323][547]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.05.08-22.47.25:323][547]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.05.08-22.47.25:323][547]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.05.08-22.47.25:323][547]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.05.08-22.47.25:323][547]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.05.08-22.47.25:323][547]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.05.08-22.47.25:324][547]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.05.08-22.47.25:328][547]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.05.08-22.47.25:328][547]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.05.08-22.47.25:328][547]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.05.08-22.47.25:328][547]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.05.08-22.47.25:328][547]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.05.08-22.47.25:328][547]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.05.08-22.47.25:450][547]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.05.08-22.47.25:450][547]LogDirectoryWatcher: A directory notification for '../../../../../Users/xavier.melton/Desktop/Doti_Year_1_Final_AIE/DOTI_AIE_Y1_FINAL/Content/' was aborted.
+[2017.05.08-22.47.25:450][547]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.05.08-22.47.25:451][547]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.05.08-22.47.25:451][547]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.05.08-22.47.25:451][547]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.05.08-22.47.25:451][547]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.05.08-22.47.25:451][547]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.05.08-22.47.25:451][547]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.05.08-22.47.25:451][547]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.05.08-22.47.25:451][547]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.05.08-22.47.25:451][547]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.05.08-22.47.25:504][547]LogDerivedDataCache: Shutdown
+[2017.05.08-22.47.25:504][547]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.05.08-22.47.25:505][547]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.05.08-22.47.25:506][547]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.05.08-22.47.25:506][547]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.05.08-22.47.25:506][547]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.05.08-22.47.25:506][547]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.05.08-22.47.25:506][547]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.05.08-22.47.25:506][547]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.05.08-22.47.25:506][547]LogOnline:Display: Unloading online subsystem: NULL
+[2017.05.08-22.47.25:506][547]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.05.08-22.47.25:506][547]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.05.08-22.47.25:506][547]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.05.08-22.47.25:506][547]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4A1D449E-46DA-C1AA-F589-7DA6DAE64941%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.2-3416026%2B%2B%2BUE4%2BRelease-4.15&UserID=d03b38134ca560f39944b29d009e0ab1%7Cf0997147a89f469294dfa6a271acf381%7C6c356ba8-5a75-4ad6-a380-ea4b96c74519&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.08-22.47.25:536][547]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.05.08-22.47.25:540][547]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.05.08-22.47.25:540][547]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.05.08-22.47.25:540][547]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.05.08-22.47.25:540][547]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.05.08-22.47.25:540][547]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.05.08-22.47.25:545][547]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.05.08-22.47.25:549][547]LogExit: Exiting.
+[2017.05.08-22.47.25:553][547]Log file closed, 05/08/17 15:47:25
