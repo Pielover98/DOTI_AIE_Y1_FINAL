@@ -36,6 +36,6 @@
 *.app binary
 
 # Unreal Engine
-*.uproject binary merge=ours
-*.uasset binary merge=ours
-*.umap binary merge=ours
+*.uproject binary
+*.uasset binary
+*.umap binary
