@@ -7,13 +7,13 @@
 [Itch.io Page](http://atoxiam.itch.io/marketplayce)
  # Contributors:
  ## Programmers:
-Xavier Melton
-Matthew Dowling
-Keil Aloia
+* Xavier Melton
+* Matthew Dowling
+* Keil Aloia
 ## Artists:
-Joanna Lin
-Cody Decker
-Natasha Takasato
-Jamie Puga
-Zachary Noah
+* Joanna Lin
+* Cody Decker
+* Natasha Takasato
+* Jamie Puga
+* Zachary Noah
 
