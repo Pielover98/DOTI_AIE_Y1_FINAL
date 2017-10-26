@@ -1,7 +1,7 @@
-# AIE Year 1 Final from Team DOTI
+# MarketPLAYce AIE Year 1 Final from Team DOTI
 ### Game was developed in unreal engine
 
-Marketplayce is a game that was developed over the course of 6 weeks for the year one final at AIE with team DOTI The concept of the game is that your a Robber inside a busy marketplace where you have to quickly steal as much stuff as you can by putting items in a stash before the timer runs out. You must avoid enemy guards patrolling the area 
+MarketPLAYce is a game that was developed over the course of 6 weeks for the year one final at AIE with team DOTI. The concept of the game is that your a robber inside a busy marketplace where you have to quickly steal as much stuff as you can by putting items in a stash before the timer runs out while avoiding enemy guards in the area 
 
 ## Key Gameplay Mechanics:
 
